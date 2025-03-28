@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     echo 'Application building...'
-                    echo 'Tool Used: Maven/Gradle/NPM'
+                    echo 'Tool Used: Maven/NPM'
                 }
             }
         }
@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     echo 'Executing unit and integration tests...'
-                    echo 'Tool Used: JUnit/TestNG/Mocha/Jest'
+                    echo 'Tool Used: JUnit/TestNG'
                 }
             }
         }
@@ -38,7 +38,7 @@ pipeline {
             steps {
                 script {
                     echo 'Deploying to staging server...'
-                    echo 'Tool Used: Docker/Kubernetes/Ansible'
+                    echo 'Tool Used: Docker/Kubernetes'
                 }
             }
         }
@@ -46,7 +46,7 @@ pipeline {
             steps {
                 script {
                     echo 'Executing integration tests on staging...'
-                    echo 'Tool Used: Selenium/Cypress/Postman'
+                    echo 'Tool Used: Selenium/Cypress'
                 }
             }
         }
@@ -54,7 +54,7 @@ pipeline {
             steps {
                 script {
                     echo 'Deploying production of application...'
-                    echo 'Tool Used: Jenkins Pipeline/Kubernetes/Helm'
+                    echo 'Tool Used: Jenkins Pipeline/Kubernetes'
                 }
             }
         }
